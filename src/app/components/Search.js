@@ -6,6 +6,7 @@ import { SearchContext } from "../context/search";
 
 // components
 import LocationSelection from "./LocationSelection";
+import DateSelection from "./DateSelection";
 
 export default function Search() {
   const { searchActive } = useContext(SearchContext);
@@ -19,6 +20,7 @@ export default function Search() {
     >
       <div className="xl:h-full flex items-center px-6 xl:px-0">
         <LocationSelection />
+        <DateSelection />
       </div>
     </div>
     );
