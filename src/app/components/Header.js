@@ -13,10 +13,15 @@ import SearchMobile from "./SearchMobile";
 // media query hook;
 import { useMediaQuery } from "react-responsive";
 
-//icons
+// icons
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 
+// search context
+import { SearchContext } from "../context/search";
+
 export default function Header() {
+  const { setSearchActive } = useContext(SearchContext)
+
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -31,6 +36,13 @@ export default function Header() {
         setHeader(true)
       } else {
         setHeader(false)
+      }
+
+      // search
+      if (window.scrollY > 800) {
+        setSearchActive(true);
+      }else {
+        setSearchActive(false);
       }
     };
 
@@ -116,7 +128,7 @@ export default function Header() {
             Why us
           </Link>
           <Link className="cursor-pointer" 
-          to="testimonials"
+          to="testimonial"
           activeClass="active"
           smooth={desktopMode}
           spy={true}
