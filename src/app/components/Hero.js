@@ -92,7 +92,7 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-      {searchActive ? (
+      {searchActive ?( 
         <motion.div 
           initial={{ y: "-100%" }}
           animate={{ y: 0 }}
