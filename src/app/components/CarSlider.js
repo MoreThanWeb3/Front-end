@@ -148,7 +148,20 @@ export default function CarSlider() {
         }}
       >
         {cars.map((car, index) => {
-          return <SwiperSlide key={index}>slide</SwiperSlide>;
+          return (
+            <SwiperSlide key={index}>
+              <div className="max-w-[385px] mx-auto sm:mx-0 bg-gray-100">
+                <Image src={car.image} width={380} height={284} alt="" />
+                <div>
+                  <div>
+                    <div>{car.type}</div>
+                    <h3>{car.name}</h3>
+                    <h3>{car.price}/day</h3>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
         })}
       </Swiper>
     </div>
