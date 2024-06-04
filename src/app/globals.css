@@ -7,16 +7,24 @@
 .rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span::after,
 .rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
 .rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after {
-  background-color: #fff !important
+  background-color: #fff !important;
 }
 
 .rdrMonthAndYearPickers {
   font-size: 16px;
 }
 
-.rdrDayNumber, .rdrWeekDay {
+.rdrDayNumber,
+.rdrWeekDay {
   color: #1e1f23 !important;
   font-weight: 500 !important;
+}
+
+/*swiper */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f13024;
 }
 @layer base {
   body {
