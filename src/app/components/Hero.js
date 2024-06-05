@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext } from "react";
+import { useRouter } from "next/navigation";
 
 // components
 import Search from './Search';
@@ -16,8 +17,14 @@ import { motion, easeInOut } from 'framer-motion'
 
 // variants
 import { fadeIn } from "/variants";
+
 export default function Hero() {
   const { searchActive } = useContext(SearchContext);
+  const router = useRouter();
+
+  const handleLoginRedirect = () => {
+    router.push('/connexion');
+  };
   return (
     <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home">
       <div className="container mx-auto h-full xl:pt-10">
@@ -71,7 +78,15 @@ export default function Hero() {
                   alt=""
                 />
               </button>
+            {/* btn login */}
+            <button 
+                onClick={handleLoginRedirect} 
+                className="btn-cta bg-red-500 text-white px-4 py-2 rounded"
+              >
+                Get started
+              </button>  
             </motion.div>
+          
           </div>
           {/* img car */}
           <motion.div

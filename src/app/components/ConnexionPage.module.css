@@ -221,3 +221,11 @@
   .container.active .toggle-right {
     transform: translateX(200%);
   }
+
+  .p{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .h1{
+    font-size: 5vh;
+  }

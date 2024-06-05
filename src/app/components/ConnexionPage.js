@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import styles from './ConnexionPage.module.css';
 
@@ -89,7 +91,7 @@ export default function ConnexionPage() {
       <div className={`${styles['form-container']} ${styles['sign-in']}`}>
 
         <form onSubmit={handleSignIn}>
-          <h1>Sign In</h1>
+          <h2 className={styles.h2}>Sign In</h2>
           <span>Sign in with your email and password</span>
           <input type="text" placeholder="Email" value={accountEmail} onChange={(e) => setAccountEmail(e.target.value)} />
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
@@ -100,13 +102,13 @@ export default function ConnexionPage() {
       <div className={styles['toggle-container']}>
         <div className={styles.toggle}>
           <div className={`${styles['toggle-panel']} ${styles['toggle-left']}`}>
-            <h1>Welcome Back!</h1>
-            <p>Create account if you want to buy car</p>
+            <h1 className={styles.h1}>Welcome Back!</h1>
+            <p className={styles.p}>Carland is committed to offering you best vehicles because your satisfaction is our pride</p>
             <button className={styles.hidden} onClick={toggleForm}>Sign In</button>
           </div>
           <div className={`${styles['toggle-panel']} ${styles['toggle-right']}`}>
-            <h1>Hello, Friend!</h1>
-            <p> Your email and password here</p>
+            <h1 className={styles.h1}>Hello !</h1>
+            <p className={styles.p}> We offer a wide selection of high-quality cars, carefully chosen to meet all your needs and ensure an exceptional buying experience</p>
             <button className={styles.hidden} onClick={toggleForm}>Sign Up</button>
           </div>
         </div>
