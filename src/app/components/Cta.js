@@ -10,8 +10,7 @@ import { fadeIn } from "/variants";
 export default function Cta() {
   return (
     <section
-      className="pt-24 xl:pt-48 flex items-end pb-0 bg-
-    [#b2b7c2]/10"
+      className="pt-24 xl:pt-48 flex items-end pb-0 bg-[#b2b7c2]/10 overflow-hidden"
       id="contact"
     >
       <div className="container mx-auto">
@@ -64,7 +63,7 @@ export default function Cta() {
           </div>
           {}
           <motion.div
-            variants={fadeIn("up", 0.8)}
+            variants={fadeIn("left", 0.8)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.2 }}
