@@ -143,7 +143,7 @@ export default function Header() {
           >
             Contact
           </Link>
-          <Link className="xl:hidden btn btn-primary btn-sm max-w-[164px]mx-auto" 
+          <Link className="xl:hidden btn bg-primary btn-sm max-w-[164px] mx-auto" 
           to="/"
           activeClass="active"
           smooth={desktopMode}

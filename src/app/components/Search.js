@@ -28,8 +28,8 @@ export default function Search() {
           <button 
             className={`${ 
               searchActive 
-                ? "btn btn-sm btn-accent xl:w-[164px]"
-                : "btn btn-lg btn-accent xl:w-[184px]" 
+                ? "btn btn-sm bg-accent xl:w-[164px]"
+                : "btn btn-lg bg-accent xl:w-[184px]" 
             }`}
           >
             Search
