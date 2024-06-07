@@ -17,8 +17,8 @@ export const CarList = props => (
             <TextField source="placeNumber" />
             <TextField source="status" />
             <TextField source="type" />
-            <EditButton basePath="/car" />
-            <DeleteButton basePath="/car" />
+            <EditButton basePath="/cars" />
+            <DeleteButton basePath="/cars" />
         </Datagrid>
     </List>
 );

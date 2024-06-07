@@ -1,60 +1,37 @@
-// src/components/Car.js
 import React from 'react';
 import { List, Datagrid, TextField, EditButton, DeleteButton, Edit, SimpleForm, TextInput, Create } from 'react-admin';
 
-export const CarList = props => (
+const PasswordField = ({ record = {} }) => <span>******</span>;
+
+export const UserList = props => (
     <List {...props}>
         <Datagrid>
             <TextField source="id" />
             <TextField source="name" />
-            <TextField source="description" />
-            <TextField source="brand" />
-            <TextField source="model" />
-            <TextField source="price" />
-            <TextField source="color" />
-            <TextField source="motorType" />
-            <TextField source="power" />
-            <TextField source="placeNumber" />
-            <TextField source="status" />
-            <TextField source="type" />
-            <EditButton basePath="/car" />
-            <DeleteButton basePath="/car" />
+            <TextField source="email" />
+            <PasswordField source="password" />
+            <EditButton basePath="/users" />
+            <DeleteButton basePath="/users" />
         </Datagrid>
     </List>
 );
 
-export const CarEdit = props => (
+export const UserEdit = props => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput source="name" />
-            <TextInput source="description" />
-            <TextInput source="brand" />
-            <TextInput source="model" />
-            <TextInput source="price" />
-            <TextInput source="color" />
-            <TextInput source="motorType" />
-            <TextInput source="power" />
-            <TextInput source="placeNumber" />
-            <TextInput source="status" />
-            <TextInput source="type" />
+            <TextInput source="email" />
+            <TextInput source="password" />
         </SimpleForm>
     </Edit>
 );
 
-export const CarCreate = props => (
+export const UserCreate = props => (
     <Create {...props}>
         <SimpleForm>
             <TextInput source="name" />
-            <TextInput source="description" />
-            <TextInput source="brand" />
-            <TextInput source="model" />
-            <TextInput source="price" />
-            <TextInput source="color" />
-            <TextInput source="motorType" />
-            <TextInput source="power" />
-            <TextInput source="placeNumber" />
-            <TextInput source="status" />
-            <TextInput source="type" />
+            <TextInput source="email" />
+            <TextInput source="password" />
         </SimpleForm>
     </Create>
 );
