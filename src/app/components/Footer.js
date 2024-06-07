@@ -42,7 +42,7 @@ export default function Footer() {
           </Link>
           {/* text */}
           <div className="text-secondary">
-            Lorem ipsum
+            Contact us or give us feedback
           </div>
           {/* phone & email */}
           <div className="flex flex-col gap-y-4 font-semibold">
@@ -102,7 +102,7 @@ export default function Footer() {
         {/* newletter */}
         <div className="flex-1">
           <h3 className="h3 font-bold mb-8">Newsletter</h3>
-          <div className="mb-9 text-secondary">Lorem upsum</div>
+          <div className="mb-9 text-secondary">Give us feedback</div>
           {/* form */}
           <form className="flex gap-x h-14">
             <input 

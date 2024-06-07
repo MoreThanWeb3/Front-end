@@ -32,9 +32,9 @@ const testimonialData = [
   },
   {
     message:
-      "They truly exceeded my expectations and made my car rental experience a delight",
+      "I drove away feeling confident in my purchase. I'll definitely be returning for my next car",
     avatar: "/images/testimonial/avatar.png",
-    name: "Jane Doe",
+    name: "Sarah Conthran",
     job: "Photographer & Videographer",
   },
 ];
