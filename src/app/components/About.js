@@ -56,7 +56,7 @@ const About = () => {
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2"
               >
-                Car services simplidied.
+                Car services simplified.
               </motion.h2>
               <motion.p
                 variants={fadeIn("up", 0.6)}

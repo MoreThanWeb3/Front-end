@@ -33,7 +33,7 @@ export default function Cta() {
                 viewport={{ once: false, amount: 0.6 }}
                 className="mb-10"
               >
-                LOREM IPSUM
+                You can see our application in Google Play Store or App Store
               </motion.p>
               {/* btns */}
               <motion.div

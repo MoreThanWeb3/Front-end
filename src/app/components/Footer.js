@@ -64,6 +64,7 @@ export default function Footer() {
           viewport={{ once: false, amount: 0.6 }}
           className="flex flex-col lg:flex-row lg:justify-between gap-x-5 gap-y-14"
         >
+<<<<<<< HEAD
           <div className="flex flex-col flex-1 gap-y-8">
             {/* logo */}
             <Link
@@ -77,6 +78,28 @@ export default function Footer() {
             {/* text */}
             <div className="text-secondary">
               Lorem ipsum
+=======
+        <div className="flex flex-col flex-1 gap-y-8">
+          {/* logo */}
+          <Link
+            to={"home"}
+            smooth={true}
+            spy={true}
+            className="cursor-pointer"
+          >
+            <Image src={"/icons/logo.svg"} width={200} height={200} alt="" />
+          </Link>
+          {/* text */}
+          <div className="text-secondary">
+            Contact us or give us feedback
+          </div>
+          {/* phone & email */}
+          <div className="flex flex-col gap-y-4 font-semibold">
+            {/* phone */}
+            <div className="flex items-center gap-x-[10px]">
+              <FaPhone />
+              <div className="font-medium">(123)456-7890</div>
+>>>>>>> cb351f46008b3231c7a1d31b6dd743988f164b27
             </div>
             {/* phone & email */}
             <div className="flex flex-col gap-y-4 font-semibold">
@@ -133,6 +156,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           {/* newsletter */}
           <div className="flex-1">
             <h3 className="h3 font-bold mb-8">Newsletter</h3>
@@ -171,6 +195,25 @@ export default function Footer() {
               </button>
             </form>
           </div>
+=======
+        </div>
+        {/* newletter */}
+        <div className="flex-1">
+          <h3 className="h3 font-bold mb-8">Newsletter</h3>
+          <div className="mb-9 text-secondary">Give us feedback</div>
+          {/* form */}
+          <form className="flex gap-x h-14">
+            <input 
+              type="text" 
+              placeholder="Your email"
+              className="outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent"
+            />
+            <button type="submit" className="btn btn-sm bg-accent w-24">
+              Submit
+            </button>
+          </form>
+        </div>
+>>>>>>> cb351f46008b3231c7a1d31b6dd743988f164b27
         </motion.div>
       </div>
       <Copyright />
